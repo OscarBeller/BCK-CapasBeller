@@ -1,0 +1,44 @@
+{{>navbar}}
+<main class="mainProducts">
+  <article id="products">
+<input type="text" value="{{user.cart}}" id="cart" hidden>
+    {{#each products}}
+      <div class="card cardEcommerce" style="width: 370px;height: 600px">
+        <img
+          src=""
+          class="card-img-top style="
+          height="300rem"
+          alt={{description}}
+        />
+        <div class="card-body">
+          <p class="card-title fw-bold fs-5">{{title}}</p>
+          <p class="card-text"><small class="text-body-secondary">
+              {{description}}
+            </small></p>
+          <p class="card-text precio fw-bold">${{price}}</p>
+          <p class="card-text"><small class="text-body-secondary">
+              stock:
+              {{stock}}
+            </small></p>
+          <button id=`btnAdd-{{code}}` class="btn btn-success" onclick="addToCart('{{_id}}')">Add</button>
+        </div>
+      </div>
+    {{/each}}
+    
+  </article>
+<div class="pagination">
+    {{#if hasPrevPage}}
+        <a href={{prevLink}}><button>Ant</button></a>
+        {{else}}
+        <button disabled class="disabled">Ant</button>
+    {{/if}}
+        <p>Pagina: <strong>{{page}}</strong> de <strong>{{totalPages}}</strong></p>
+    {{#if hasNextPage}}
+        <a href={{nextLink}}><button>Sig</button></a>
+        {{else}}
+        <button disabled class="disabled">Sig</button>
+    {{/if}}
+</div>
+</main>
+<script  type="text/javascript"src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="/js/cart.js"></script>

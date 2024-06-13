@@ -1,0 +1,32 @@
+<header>
+  <nav class="navbar navbar-custom">
+    <div class="container-fluid">
+      <h1>Desafios Backend</h1>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/products">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/realTimeProducts">Real Time Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/carts/{{cart._id}}">
+            <button class="btn btn-primary" type="button">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </a>
+        </li>
+      </ul>
+      <div class="userContainer ml-auto">
+        <span class="navbar-text">Welcome, {{user.first_name}}!</span>
+        <a class="nav-link" href="/profile">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <button class="btn btn-primary" onclick="logout()">
+          <i class="fa-solid fa-door-open"></i>
+          Logout
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,41 @@
+{{>navbar}}
+<main id="mainCarrito" class="container-fluid d-flex flex-row align-items-center">
+  <article id="products" class="cardsContainer flex-grow-1 w-100">
+    <section id="cards" class="h-100 w-100 d-flex flex-column align-items-center">
+      <input type="text" value="{{user.cart}}" id="cart" hidden>
+      {{#each userCart}}
+        <div class="card mb-3 cardCarrito">
+          <div class="row g-0">
+            <div class="col-md-4 colCart">
+              <img src="{{product.image}}" class="img-fluid imgCart rounded-start" alt="{{product.description}}">
+            </div>
+            <div class="col-md-8">
+              <div class="btnEliminar">
+                <button id="btnEliminar-{{id}}" class="btn btn-danger" onclick="removeFromCart('{{product._id}}')">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+              <div class="card-body cardCart">
+                <h5 class="card-title fw-bold">{{product.title}}</h5>
+                <p class="card-text">{{product.description}}</p>
+                <p class="card-text precio fw-bold">${{product.price}}</p>
+                <p class="card-text">Quantity: {{quantity}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </section>
+  </article>
+  <section class="resumenPedido w-100">
+    <div class="mascosas">
+      <h2 class="fw-bold">Resumen de su pedido:</h2>
+      <p id="precioTotal">El precio total es de:</p>
+    </div>
+    <button id="btnf" class="btn btn-success" onclick="purchase('{{user.cart}}')">Finalizar Compra</button>
+    <a href="/products"><button class="btn btn-primary">Seguir Comprando</button></a>
+  </section>
+</main>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/cart.js"></script>

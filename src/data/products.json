@@ -1,0 +1,133 @@
+[
+    {
+         "id": 1,
+         "title": "camionero negro",
+         "description": "mate camionero negro",
+         "code": "MCN1",
+         "price": "$20.000",
+         "status": true,
+         "stock": 10,
+         "category": "mate",
+         "thumbnails": [
+              "imgMCN",
+              "img2MCN"
+         ]
+    },
+    {
+         "id": 2,
+         "title": "Media Manija",
+         "description": "Termo media manija",
+         "code": "TMM",
+         "price": "$10.900",
+         "status": true,
+         "stock": 5,
+         "category": "termos",
+         "thumbnails": [
+              "imgTMM",
+              "img2TMM"
+         ]
+    },
+    {
+         "id": 3,
+         "title": "Matera de cuero",
+         "description": "Matera de cuero ideal para viajar",
+         "code": "MDC",
+         "price": "$23",
+         "status": true,
+         "stock": 3,
+         "category": "materas",
+         "thumbnails": [
+              "imgMatera",
+              "img2Matera"
+         ]
+    }
+    ,
+     {
+          "id": 4,
+          "title": "MATE CAMIONERO IMPERIAL",
+          "description": "mate camionero imperial negro",
+          "code": "MCI1",
+          "price": "$30.500",
+          "status": true,
+          "stock": 10,
+          "category": "mate",
+          "thumbnails": [
+               "img1",
+               "img2"
+          ]
+     }
+     ,
+     {
+          "id": 5,
+          "title": "MATERA AUTO",
+          "description": "Matera ideal para llevarla adentro del auto",
+          "code": "MPA",
+          "price": "$9.500",
+          "status": true,
+          "stock":12,
+          "category": "materas",
+          "thumbnails": [
+               "img1",
+               "img2"
+          ]
+     }
+     ,
+     {
+          "id": 6,
+          "title": "TERMO STANLEY",
+          "description": "El termo del momento",
+          "code": "STY",
+          "price": "$135.000",
+          "status": true,
+          "stock": 5,
+          "category": "termos",
+          "thumbnails": [
+               "img1",
+               "img2"
+          ]
+     },
+     {
+          "id": 7,
+          "title": "MATE TORPED",
+          "description": "Mate torpedo, con la medida justa para mates individuales",
+          "code": "MTOR",
+          "price": "$12.050",
+          "status": true,
+          "stock": 10,
+          "category": "mate",
+          "thumbnails": [
+               "img1",
+               "img2"
+          ]
+     }
+     ,
+     {
+          "id": 8,
+          "title": "Yerbero",
+          "description": "Lleva tu yerba en un practico estuche",
+          "code": "Yerbero",
+          "price": "$5.000",
+          "status": true,
+          "stock": 50,
+          "category": "materas",
+          "thumbnails": [
+               "img1",
+               "img2"
+          ]
+     }
+     ,
+     {
+          "id": 8,
+          "title": "Yerbero",
+          "description": "Lleva tu yerba en un practico estuche",
+          "code": "Yerbero",
+          "price": "$5.000",
+          "status": true,
+          "stock": 50,
+          "category": "materas",
+          "thumbnails": [
+               "img1",
+               "img2"
+          ]
+     }
+]
